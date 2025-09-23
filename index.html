@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Bhanu Teja</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Bhanu Teja</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./asset/about-pic.jpg" alt="Bhanu Teja profile picture" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Bhanu Teja</h1>
+            <p class="section__text__p2">Full stack Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./asset/CV.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./asset/linkedin.png" alt="My LinkedIn profile" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/bhanu-teja-04a85921/'" />
+                <img src="./asset/github.png" alt="My Github profile" class="icon"
+                    onclick="location.href='https://github.com/BHANUTEJA1990'" />
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./asset/profile-pic.jpg" alt="Profile picture" class="about-pic" />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./asset/experience.png" alt="Experience icon" class="icon" />
+                        <h3>Experience</h3>
+                        <p>4.6 years <br /> Development and Testing</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./asset/education.png" alt="Education icon" class="icon" />
+                        <h3>Education</h3>
+                        <p>B-Tech. Bachelors Degree
+
+                        </p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        Hi, I’m Bhanu Teja, a passionate full-stack developer with expertise in both front-end and
+                        back-end technologies. I love creating seamless user experiences and solving complex problems.
+                        Currently, I work in service based company in bangalore , where I build robust web applications.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./asset/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./asset/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./asset/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./asset/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>BootStrap</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./asset/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./asset/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>React </h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">BackEnd Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./asset/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>MYSQL</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./asset/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Python</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./asset/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Django</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./asset/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Git</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./asset/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Node.js </h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./asset/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./asset/project-1.png" alt="Project 1" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project One</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/BHANUTEJA1990/django2'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/BHANUTEJA1990/django2'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./asset/project-2.png" alt="Project 2" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Two</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/BHANUTEJA1990/droptableinsql'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/BHANUTEJA1990/droptableinsql'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./asset/project-3.png" alt="Project 3" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Three</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/BHANUTEJA1990/newyear.github.io'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/BHANUTEJA1990/newyear.github.io'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./asset/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./asset/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+                <p><a href="mailto:examplemail@gmail.com">vishwateja2012@gmail.com</a></p><br>
+                <h3>Phone:+91 9030500532</h3>
+            </div>
+            <div class="contact-info-container">
+                <img src="./asset/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+                <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div>
+            <form id="contact-form" action="#" method="post"
+                style="display: flex; flex-direction: column; max-width: 500px; margin: 50px auto; padding: 20px; background-color: #fff; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); font-family: Arial, sans-serif;">
+                <label style="margin-top: 10px;">Name:</label>
+                <input type="text" name="name" required
+                    style="padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+
+                <label style="margin-top: 10px;">Email:</label>
+                <input type="email" name="email" required
+                    style="padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+
+                <label style="margin-top: 10px;">Message:</label>
+                <textarea name="message" rows="5" required
+                    style="padding: 10px; border-radius: 5px; border: 1px solid #ccc;"></textarea>
+
+                <button type="submit"
+                    style="margin-top: 15px; padding: 10px; background-color: #4CAF50; color: #fff; border: none; border-radius: 5px; cursor: pointer;">
+                    Send
+                </button>
+            </form>
+        </div>
+        <p>&copy; Bhanu Teja. All rights reserved.</p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        // Initialize EmailJS with your public key
+        emailjs.init("1xalb9ETDu8V7iHZL"); // Replace with your public key
+
+        const form = document.getElementById('contact-form');
+        const status = document.getElementById('status');
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            emailjs.sendForm('service_df4slgn', 'template_vr6sclc', this)
+                .then(function () {
+                    status.textContent = "Email sent successfully!";
+                    status.style.color = "green";
+                    form.reset();
+                }, function (error) {
+                    status.textContent = "Failed to send email. Try again!";
+                    status.style.color = "red";
+                    console.error(error);
+                });
+        });
+    </script>
+
+</body>
+
+</html>
